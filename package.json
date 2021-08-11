@@ -16,7 +16,7 @@
     "url": "git+https://github.com/mojule/entity-app-fs-db.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nik Coughlin <nrkn.com@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mojule/entity-app-fs-db/issues"
