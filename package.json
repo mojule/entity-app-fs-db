@@ -1,0 +1,39 @@
+{
+  "name": "@mojule/entity-app-fs-db",
+  "version": "0.1.0",
+  "description": "Flat file JSON db for entity-app",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "mocha": "node ./node_modules/mocha/bin/mocha dist/test",
+    "test": "npm run build && npm run mocha",
+    "nyc": "node ./node_modules/nyc/bin/nyc --reporter=lcov --reporter=html --reporter=text npm run mocha",
+    "coverage": "npm run build && npm run nyc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojule/entity-app-fs-db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mojule/entity-app-fs-db/issues"
+  },
+  "homepage": "https://github.com/mojule/entity-app-fs-db#readme",
+  "dependencies": {
+    "@mojule/entity-app": "^0.4.3",
+    "@mojule/util": "^0.1.3",
+    "async-await-retry": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.6.0",
+    "mocha": "^9.0.3",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "exclude": "src/test"
+  }
+}
